@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background-color: #1ABC9C;
+    }
+.wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    }
+a:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child){
+    margin-right: 20px;
+}
+.about{
+    display: flex;
+    align-items: center;
+}
+.about-img{
+    width: 50%;
+}
+.about-info{
+    width: 50%;
+    padding: 0 65px;
+}
+h1{
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-descr {
+    font-size: 20px;
+    text-align: justify;
+}
+.projects{
+    width: 100%;
+    background-color:#DCFFEB;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-weight: 400;
+    font-size: 35px;
+    margin-left: 64px;
+    margin-bottom: 50px;
+}
+.projects-wrapper{
+    width: 90%;
+    height: 482px;
+    padding: 124px;
+    }
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    }
+li{
+    width: 436px;
+    height: 378px;
+    list-style-type: none;
+    }
+.img-wrap{
+    position: relative;
+}
+.img-wrap h3 {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.first{
+    background:url(../images/project__arena\ \(1\).png) ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+   }
+   .text{
+    width: 436px;
+    height: 171px;
+    padding-top: 28px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+   }
+   
+h3{
+    width: 148px;
+    height: 24px;
+    color: white;
+    margin-left: 36px;
+    margin-right: 252px;
+    font-size: 24px;
+    font-family:'Oswald', sans-serif;
+   }
+h4{
+    width: 364px;
+    height: 101px;
+    color: white;
+    margin-left: 36px;
+    margin-right: 36px;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Контакты*/
+
+    .contacts {
+        padding: 84px 70px 76px;
+    }
+    
+    .contacts h2 {
+        text-align: left;
+        margin-bottom: 55px;
+    }
+    
+    .contacts-wrapper {
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: aqua; */
+        /* align-items: center; */
+        
+    }
+    
+    .contacts-wrapper-block {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrapper-block-header {
+        color:#999999;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500px;
+        margin-top: 36px;
+        margin-bottom: 25px;
+    }
+    
+    .wrapper-block-text {
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500px;
+        text-align: center;
+    }
+    
+    .wrapper-block-text a {
+        color: #ed5151;
+        font-size: 24px;
+    } 
+
+
+/* Свойство justify-content: выравнивает элементы вдоль главной оси (горизонтально) и принимает следующие значения:
+flex-start: элементы выравниваются по левой стороне контейнера.
+flex-end: элементы выравниваются по правой стороне контейнера.
+center: элементы выравниваются по центру контейнера.
+space-between: элементы отображаются с одинаковыми отступами между ними.
+space-around: элементы отображаются с одинаковыми отступами вокруг них.
+
+   Свойство align-items: выравнивает элементы вертикально и принимает следующие значения:
+flex-start: элементы выравниваются по верхнему краю контейнера.
+flex-end: элементы выравниваются по нижнему краю контейнера.
+center: элементы выравниваются вертикально по центру контейнера.
+baseline: элементы отображаются на базовой линии контейнера.
+stretch: элементы растягиваются, чтобы заполнить контейнер.
+
+    flex-direction. Это свойство CSS задает направление, в котором будут расположены элементы в контейнере, и принимает следующие значения:
+row: элементы размещаются по направлению текста.
+row-reverse: элементы отображаются в обратном порядке к направлению текста.
+column: элементы располагаются сверху вниз.
+column-reverse: элементы располагаются снизу вверх.
+
+     свойство flex-wrap: указывает нужно ли чтобы элементы находились в одном ряду или автоматически переносились.
+nowrap: размеры элементов устанавливаются автоматически, чтобы они поместились в один ряд.
+wrap: элементы автоматически переносятся на новую строку.
+wrap-reverse: элементы автоматически переносятся на новую строку, но строки расположены в обратном порядке 
+
+     flex-flow: используется для их комбинирования свойств flex-direction и flex-wrap. Это свойство принимает их значения, разделённые пробелом.
+
+    Свойство align-content: используется чтобы указать, как несколько рядов должны отделяться друг от друга и принимает следующие значения:
+flex-start: ряды группируются в верхней части контейнера.
+flex-end: ряды группируются в нижней части контейнера.
+center: ряды группируются вертикально по центру контейнера.
+space-between: ряды отображаются с одинаковыми расстояниями между ними.
+space-around: ряды отображаются с одинаковыми расстояниями вокруг них.
+stretch: ряды растягиваются, чтобы заполнить контейнер равномерно.
+
+
+   
+   */
